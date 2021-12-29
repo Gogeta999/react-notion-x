@@ -145,7 +145,8 @@
   .notion-page-content-has-aside {
     display: flex;
     flex-direction: row;
-    width: calc((100vw + var(--notion-max-width)) / 2);
+    /* Need to change value to 2.1 to prevent overflow of aside */
+    width: calc((100vw + var(--notion-max-width)) / 2.1);
   }
 
   .notion-page-content-has-aside .notion-aside {
@@ -231,7 +232,7 @@
 }
 
 .notion-viewport {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
